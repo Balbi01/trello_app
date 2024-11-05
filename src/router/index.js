@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/components/views/Home.vue'
+import Board from '@/components/views/Board.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +10,12 @@ const routes = [
     path: '/',
     name: 'home',
     component: Home
+  },
+  {
+    path: '/board/:id',
+    name: 'board',
+    component: Board,
+    props: true
   },
   {
     path: '/about',

@@ -23,7 +23,7 @@
 <script>
 import BoardCard from '../BoardCard.vue';
 
-export default {
+const HomeView = {
     name: 'home-view',
 
     components: { BoardCard },
@@ -53,6 +53,8 @@ export default {
     }
 }
 
+
+export default HomeView;
 </script>
 
 <style lang="scss" scoped>
